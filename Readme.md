@@ -6,4 +6,3 @@ Here lies a basic express server - not much more, not much less.  Can't promise 
 
 ## Some Tidbits / Reminders...
 HTTPS requires the use of an SSL certificate, and for development purposes there are quite a few resources on generating the [self-signed variety](https://en.wikipedia.org/wiki/Self-signed_certificate).  That said, the one that worked the best (read most consistently) was found in [this StackOverflow post](http://stackoverflow.com/a/24283204)
-
