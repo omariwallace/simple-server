@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Sync Injection -->
+    <!-- <script>
+      (function() {
+        console.log('PRE: running the inline script')
+        var scriptTag = document.createElement('script')
+        scriptTag.type = 'text/javascript'
+        scriptTag.src = '/js/slowScript.js'
+        scriptTag.async = false
+        
+        document.head.appendChild(scriptTag)
+      }())
+    </script> -->
+    <!-- Sync Inline -->
+    <script type="text/javascript" src='/js/slowScript.js'></script>
+  </head>
+  <body>
+    <h1>This Is Only A Test</h1>
+    <script type="text/javascript">
+      (function () {
+        console.log('POST: after inline script')
+      }())
+    </script>
+  </body>
+</html>

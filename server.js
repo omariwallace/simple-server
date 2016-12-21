@@ -13,10 +13,13 @@ const credentials = {
 
 // App configuration
 const app = express()
+
+// Serve static files
 app.use(express.static(path.join(__dirname, 'public')))
 
+// Routing
 app.get('/', (req, res) => {
-  res.send('CHEA')
+  res.render('index')
 })
 
 // Error handling middleware
